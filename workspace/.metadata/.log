@@ -965,3 +965,920 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/SE3_WebAppExam
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 !SUBENTRY 1 org.eclipse.core.resources 4 368 2014-11-06 20:11:00.762
 !MESSAGE Resource '/SE3_WebAppExample/test/sample_db.sql' does not exist.
+!SESSION 2014-11-13 11:26:04.625 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-11-13 11:27:37.168
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-11-13 11:27:37.169
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Darrens'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:50:55.195
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:50:55.204
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:50:55.210
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:50:55.214
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-13 11:50:56.073
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:50:56.073
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:50:56.074
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:51:21.484
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:51:21.486
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:51:21.488
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:51:21.492
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-13 11:51:22.327
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:51:22.327
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:51:22.327
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:52:05.853
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:52:05.853
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:52:05.856
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:52:05.857
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-13 11:52:06.696
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:52:06.697
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:52:06.697
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:52:59.936
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:55:04.702
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:55:04.704
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:55:04.716
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:55:04.718
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-13 11:55:05.542
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:55:05.542
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:55:05.542
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:58:49.800
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-13 11:58:49.801
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:58:49.803
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:58:49.804
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-13 11:58:50.644
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:58:50.644
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-13 11:58:50.644
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-17 16:51:42.062 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-11-17 16:52:07.282
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-11-17 16:52:07.282
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Darrens'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2014-11-20 11:23:07.753 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-11-20 11:23:50.550
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-11-20 11:23:50.552
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Darrens'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:26:55.651
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:26:55.653
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:26:55.675
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:26:55.681
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-20 11:26:56.809
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:26:56.809
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:26:56.810
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:28:41.445
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:28:47.324
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:30:40.432
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:30:40.448
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:30:40.456
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:30:40.466
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-20 11:30:41.589
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:30:41.589
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:30:41.590
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:31:54.210
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:33:37.436
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:33:37.442
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:33:37.447
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:33:37.454
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2014-11-20 11:33:38.720
+!MESSAGE Could not connect to MySQL_Test_DB.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:33:38.721
+!MESSAGE Error creating SQL Model Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.initializeJDBCConnection(ConnectionInfoImpl.java:705)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionInfoImpl.<init>(ConnectionInfoImpl.java:690)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:38)
+	at org.eclipse.datatools.connectivity.sqm.core.SQMConnectionFactory.createConnection(SQMConnectionFactory.java:45)
+	at org.eclipse.datatools.connectivity.sqm.internal.core.connection.ConnectionFactory.createConnection(ConnectionFactory.java:59)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryAdapterProvider.createConnection(ConnectionFactoryAdapterProvider.java:114)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:163)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2014-11-20 11:33:38.734
+!MESSAGE Error creating JDBC Connection connection to MySQL_Test_DB. (Error: com.mysql.jdbc.Driver)
+!STACK 0
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.net.FactoryURLClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.createConnection(JDBCConnection.java:327)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.internalCreateConnection(JDBCConnection.java:229)
+	at org.eclipse.datatools.connectivity.drivers.jdbc.JDBCConnection.open(JDBCConnection.java:120)
+	at org.eclipse.datatools.enablement.internal.mysql.connection.JDBCMySQLConnectionFactory.createConnection(JDBCMySQLConnectionFactory.java:28)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(ConnectionFactoryProvider.java:83)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(ConnectionProfile.java:359)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.datatools.connectivity 1 10001 2014-11-20 11:33:46.425
+!MESSAGE Unable to locate JAR/zip in file system as specified by the driver definition: C:\Users\Darren\Desktop\GIT\SoftwareEngineering3\libs\mysql-connector-java-5.1.18-bin.jar.: DriverDefn.org.eclipse.datatools.enablement.mysql.5_1.driverTemplate.MySQL JDBC Driver. Using the driver properties defined in database profile instead.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2014-11-20 11:41:15.470
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2014-11-20 11:42:16.921
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2014-11-20 11:42:57.902
+!MESSAGE Port 8080 required by Tomcat v7.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2014-11-20 11:45:48.980
+!MESSAGE Port 8080 required by Tomcat v7.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
